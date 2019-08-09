@@ -1,0 +1,5314 @@
+{
+  "name": "IBM Power Systems Identifier",
+  "intents": [
+    {
+      "intent": "Check_Date",
+      "examples": [
+        {
+          "text": "Can you still buy a @Server_Name?"
+        },
+        {
+          "text": "Can you still upgrade a @Server_Name?"
+        },
+        {
+          "text": "When did we announce the S924?"
+        },
+        {
+          "text": "When does p704 go end of life?"
+        },
+        {
+          "text": "When does the System p 520 go End of Life?"
+        },
+        {
+          "text": "When will an IBM Power System 780 stop being supported?"
+        },
+        {
+          "text": "Is an E880 still sold?"
+        },
+        {
+          "text": "Is the Power 740 still supported?"
+        },
+        {
+          "text": "What is the End of Service date for an IBM Power 550?"
+        },
+        {
+          "text": "What is the Withdrawn from Marketing date for S814?"
+        },
+        {
+          "text": "What is the EoS date for the pSeries 710?"
+        },
+        {
+          "text": "When does the E870C go WDFM?"
+        },
+        {
+          "text": "Do we still sell a p770?"
+        }
+      ],
+      "description": "Checking a lifecycle date for an IBM Power System"
+    },
+    {
+      "intent": "Identify",
+      "examples": [
+        {
+          "text": "IBM Power System"
+        },
+        {
+          "text": "Power System"
+        },
+        {
+          "text": "pSeries"
+        },
+        {
+          "text": "iSeries"
+        },
+        {
+          "text": "Power"
+        },
+        {
+          "text": "System i"
+        },
+        {
+          "text": "System p"
+        },
+        {
+          "text": "AS/400"
+        },
+        {
+          "text": "RS/6000"
+        }
+      ],
+      "description": "Find out about a particular IBM Power Systems server or earlier model"
+    },
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Good day"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good evening"
+        }
+      ],
+      "description": "A friendly start to the conversation"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "POWER_Gen",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "POWER5+",
+          "synonyms": [
+            "p5+",
+            "Power 5+",
+            "power5+"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "POWER9",
+          "synonyms": [
+            "p9",
+            "Power 9",
+            "power9"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "POWER8",
+          "synonyms": [
+            "p8",
+            "Power 8",
+            "power8"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "POWER7+",
+          "synonyms": [
+            "p7+",
+            "Power 7+",
+            "power7+"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "POWER6+",
+          "synonyms": [
+            "Power 6+",
+            "power6+",
+            "p6+"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "POWER7",
+          "synonyms": [
+            "Power 7",
+            "power7",
+            "p7"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "POWER6",
+          "synonyms": [
+            "Power 6",
+            "power6",
+            "p6"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "POWER5",
+          "synonyms": [
+            "Power 5",
+            "power5",
+            "p5"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Server_Name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "IBM Flex System PowerLinux p24L",
+          "synonyms": [
+            "p24L",
+            "PowerLinux p24L",
+            "System PowerLinux p24L",
+            "Flex System PowerLinux p24L",
+            "p24Ls"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S812",
+          "synonyms": [
+            "S812",
+            "Power S812",
+            "Power System S812",
+            "IBM Power S812",
+            "812",
+            "812s",
+            "S812s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 720 Express",
+          "synonyms": [
+            "p720",
+            "720",
+            "Power 720 Express",
+            "IBM Power System 720",
+            "IBM Power 720",
+            "Power 720",
+            "Power System 720",
+            "720s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System AC922 GTH",
+          "synonyms": [
+            "AC922",
+            "Power AC922",
+            "IBM Power AC922",
+            "Power System AC922",
+            "Newell",
+            "AC922s",
+            "Newells"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S822L",
+          "synonyms": [
+            "S822L",
+            "Power S822L",
+            "IBM Power S822L",
+            "Power System S822L",
+            "822L",
+            "822Ls",
+            "S822Ls"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S922",
+          "synonyms": [
+            "S922",
+            "Power S922",
+            "IBM Power S922",
+            "Power System S922",
+            "922",
+            "922s",
+            "S922s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System H922",
+          "synonyms": [
+            "H922",
+            "Power H922",
+            "IBM Power H922",
+            "Power System H922",
+            "H922s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E980",
+          "synonyms": [
+            "E980",
+            "Power E980",
+            "IBM Power E980",
+            "Power System E980",
+            "980",
+            "980s",
+            "E980s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E870C",
+          "synonyms": [
+            "E870C",
+            "Power E870C",
+            "IBM Power E870C",
+            "Power System E870C",
+            "870C",
+            "870Cs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 750 Express",
+          "synonyms": [
+            "p750",
+            "750",
+            "Power 750 Express",
+            "IBM Power System 750",
+            "IBM Power 750",
+            "Power System 750",
+            "Power 750",
+            "750s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter JS23 Express",
+          "synonyms": [
+            "JS23",
+            "BladeCenter JS23 Express",
+            "BladeCenter JS23",
+            "IBM BladeCenter JS23",
+            "JS23s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S812LC",
+          "synonyms": [
+            "S812LC",
+            "Power S812LC",
+            "IBM Power S812LC",
+            "Power System S812LC",
+            "812LCs",
+            "S812LCs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System H924",
+          "synonyms": [
+            "H924",
+            "Power H924",
+            "IBM Power H924",
+            "Power System H924",
+            "H924s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E950",
+          "synonyms": [
+            "E950",
+            "Power E950",
+            "IBM Power E950",
+            "Power System E950",
+            "950",
+            "950s",
+            "E950s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 560 Express",
+          "synonyms": [
+            "560",
+            "Power 560 Express",
+            "IBM Power 560 Express",
+            "IBM Power System 560",
+            "Power System 560",
+            "IBM Power 560",
+            "Power 560",
+            "560s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S924",
+          "synonyms": [
+            "S924",
+            "Power S924",
+            "IBM Power S924",
+            "Power System S924",
+            "924",
+            "924s",
+            "S924s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S914",
+          "synonyms": [
+            "S914",
+            "Power S914",
+            "IBM Power S914",
+            "Power System S914",
+            "914",
+            "914s",
+            "S914s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System L922",
+          "synonyms": [
+            "L922",
+            "Power L922",
+            "IBM Power L922",
+            "Power System L922",
+            "L922s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S822LC for HPC",
+          "synonyms": [
+            "S822LC for HPC",
+            "Power S822LC for HPC",
+            "IBM Power S822LC for HPC",
+            "Power System S822LC for HPC",
+            "Minsky"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S822LC GTA",
+          "synonyms": [
+            "S822LC",
+            "Power S822LC",
+            "IBM Power S822LC",
+            "Power System S822LC",
+            "S822LCs",
+            "S822LC GTA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S821LC",
+          "synonyms": [
+            "S821LC",
+            "Power S821LC",
+            "IBM Power S821LC",
+            "Power System S821LC",
+            "S812LCs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S822LC for Big Data",
+          "synonyms": [
+            "S822LC for Big Data",
+            "Power S822LC for Big Data",
+            "IBM Power S822LC for Big Data",
+            "Power System S822LC for Big Data"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM PowerLinux 7R4",
+          "synonyms": [
+            "7R4",
+            "PowerLinux 7R4",
+            "7R4s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM PowerLinux 7R1",
+          "synonyms": [
+            "7R1",
+            "PowerLinux 7R1",
+            "7R1s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S824L",
+          "synonyms": [
+            "S824L",
+            "Power S824L",
+            "IBM Power S824L",
+            "Power System S824L",
+            "824L",
+            "824Ls",
+            "S824Ls"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S824",
+          "synonyms": [
+            "S824",
+            "Power S824",
+            "IBM Power S824",
+            "Power System S824",
+            "824",
+            "824s",
+            "S824s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S822",
+          "synonyms": [
+            "S822",
+            "Power S822",
+            "IBM Power S822",
+            "Power System S822",
+            "822",
+            "822s",
+            "S822s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S812L",
+          "synonyms": [
+            "S812L",
+            "Power S812L",
+            "IBM Power S812L",
+            "Power System S812L",
+            "812L",
+            "812Ls",
+            "S812Ls"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System ESE",
+          "synonyms": [
+            "ESE",
+            "Power ESE",
+            "Power System ESE",
+            "IBM Power ESE",
+            "ESEs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 570",
+          "synonyms": [
+            "p570",
+            "570",
+            "Power 570",
+            "IBM Power 570",
+            "Power System 570",
+            "570s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Flex System p460",
+          "synonyms": [
+            "p460",
+            "System p460",
+            "Flex System p460",
+            "p460s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Flex System p270",
+          "synonyms": [
+            "p270",
+            "System p270",
+            "Flex System p270",
+            "p270s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter JS12 Express",
+          "synonyms": [
+            "JS12",
+            "BladeCenter JS12 Express",
+            "BladeCenter JS12",
+            "IBM BladeCenter JS12",
+            "JS12s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "i5 515",
+          "synonyms": [
+            "p515",
+            "515",
+            "515s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E880C",
+          "synonyms": [
+            "E880C",
+            "Power E880C",
+            "IBM Power E880C",
+            "Power System E880C",
+            "880C",
+            "880Cs",
+            "E880Cs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E880",
+          "synonyms": [
+            "E880",
+            "Power E880",
+            "IBM Power E880",
+            "Power System E880",
+            "880",
+            "E880s",
+            "880s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E870",
+          "synonyms": [
+            "E870",
+            "Power E870",
+            "IBM Power E870",
+            "Power System E870",
+            "870",
+            "IBM Power 870",
+            "Power 870",
+            "870s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E850C",
+          "synonyms": [
+            "E850C",
+            "Power E850C",
+            "IBM Power E850C",
+            "Power System E850C",
+            "850C",
+            "850Cs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System E850",
+          "synonyms": [
+            "E850",
+            "Power E850",
+            "IBM Power E850",
+            "Power System E850",
+            "850",
+            "850s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 795",
+          "synonyms": [
+            "p795",
+            "795",
+            "Power 795",
+            "IBM Power 795",
+            "Power System 795",
+            "795s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 770",
+          "synonyms": [
+            "p770",
+            "770",
+            "Power 770",
+            "Power  System 770",
+            "IBM Power 770",
+            "770s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 760",
+          "synonyms": [
+            "p760",
+            "760",
+            "Power 760",
+            "Power System 760",
+            "IBM Power 760",
+            "760s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 755",
+          "synonyms": [
+            "755",
+            "Power 755",
+            "IBM Power 755",
+            "Power System 755",
+            "755s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 740 Express",
+          "synonyms": [
+            "p740",
+            "740",
+            "Power 740 Express",
+            "IBM Power System 740",
+            "IBM Power 740",
+            "Power System 740",
+            "Power 740",
+            "740s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 730 Express",
+          "synonyms": [
+            "p730",
+            "730",
+            "Power 730 Express",
+            "IBM Power System 730",
+            "IBM Power 730",
+            "Power System 730",
+            "Power 730",
+            "730s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 710 Express",
+          "synonyms": [
+            "p710",
+            "710",
+            "Power 710 Express",
+            "IBM Power System 710",
+            "Power System 710",
+            "IBM Power 710",
+            "Power 710",
+            "710s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 595",
+          "synonyms": [
+            "p595",
+            "595",
+            "Power 595",
+            "IBM Power 595",
+            "Power System 595",
+            "595s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 590",
+          "synonyms": [
+            "p590",
+            "590",
+            "Power 590",
+            "IBM Power 590",
+            "Power System 590",
+            "590s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 575",
+          "synonyms": [
+            "p575",
+            "575",
+            "Power 575",
+            "IBM Power 575",
+            "Power System 575",
+            "575s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 780",
+          "synonyms": [
+            "p780",
+            "780",
+            "Power 780",
+            "IBM Power 780",
+            "Power System 780",
+            "780s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter JS22 Express",
+          "synonyms": [
+            "JS22",
+            "BladeCenter JS22 Express",
+            "BladeCenter JS22",
+            "IBM BladeCenter JS22",
+            "JS22s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Flex System p260",
+          "synonyms": [
+            "p260",
+            "System p260",
+            "Flex System p260",
+            "p260s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter PS704 Express",
+          "synonyms": [
+            "PS704",
+            "BladeCenter PS704 Express",
+            "BladeCenter PS704",
+            "IBM BladeCenter PS704",
+            "PS704s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter PS703 Express",
+          "synonyms": [
+            "PS703",
+            "BladeCenter PS703 Express",
+            "BladeCenter PS703",
+            "IBM BladeCenter PS703",
+            "PS703s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter PS702 Express",
+          "synonyms": [
+            "PS702",
+            "BladeCenter PS702 Express",
+            "BladeCenter PS702",
+            "IBM BladeCenter PS702",
+            "PS702s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter PS701 Express",
+          "synonyms": [
+            "PS701",
+            "BladeCenter PS701 Express",
+            "BladeCenter PS701",
+            "IBM BladeCenter PS701",
+            "PS701s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter PS700 Express",
+          "synonyms": [
+            "PS700",
+            "BladeCenter PS700 Express",
+            "IBM BladeCenter PS700",
+            "BladeCenter PS700",
+            "PS700s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM BladeCenter JS43 Express",
+          "synonyms": [
+            "JS43",
+            "BladeCenter JS43 Express",
+            "IBM BladeCenter JS43",
+            "BladeCenter JS43",
+            "JS43s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 185",
+          "synonyms": [
+            "p185",
+            "185"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 505",
+          "synonyms": [
+            "p505",
+            "505"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 510",
+          "synonyms": [
+            "p510",
+            "510"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 520",
+          "synonyms": [
+            "p520",
+            "520"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 52A",
+          "synonyms": [
+            "p52A",
+            "52A"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 550",
+          "synonyms": [
+            "p550",
+            "550"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 55A",
+          "synonyms": [
+            "p55A",
+            "55A"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 560Q",
+          "synonyms": [
+            "p560Q",
+            "560Q"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 570",
+          "synonyms": [
+            "p570",
+            "570"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 575",
+          "synonyms": [
+            "p575",
+            "575"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 590",
+          "synonyms": [
+            "p590",
+            "590"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "p5 595",
+          "synonyms": [
+            "p595",
+            "595"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "i5 520",
+          "synonyms": [
+            "p520",
+            "520"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "i5 525",
+          "synonyms": [
+            "p525",
+            "525"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "i5 570",
+          "synonyms": [
+            "p570",
+            "570"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM System i 570",
+          "synonyms": [
+            "i 570",
+            "System i 570"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "i5 595",
+          "synonyms": [
+            "595"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Smart Cube",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "i5 550",
+          "synonyms": [
+            "p550",
+            "550"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System AC922 GTX",
+          "synonyms": [
+            "AC922 GTX"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System AC922 GTG",
+          "synonyms": [
+            "AC922 GTG"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S822LC GCA",
+          "synonyms": [
+            "S822LC GCA",
+            "Power S822LC GCA",
+            "Power System GCA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM PowerLinux 7R2",
+          "synonyms": [
+            "7R2",
+            "PowerLinux 7R2",
+            "7R2s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System S814",
+          "synonyms": [
+            "S814",
+            "Power S814",
+            "IBM Power S814",
+            "Power System S814",
+            "814s",
+            "S814s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 550 Express",
+          "synonyms": [
+            "550",
+            "Power 550 Express",
+            "IBM Power 550 Express",
+            "IBM Power System 550",
+            "IBM Power 550",
+            "Power System 550",
+            "Power 550",
+            "550s"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM Power System 520 Express",
+          "synonyms": [
+            "520",
+            "Power 520 Express",
+            "IBM Power 520 Express",
+            "IBM Power System 520",
+            "Power System 520",
+            "Power 520",
+            "520s"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "Server_MTM",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "8246-L1D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9406-595",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9406-MMA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9406-570",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9406-550",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9406-525",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9406-520",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9405-520",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9407-515",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9119-595",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9119-590",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9118-575",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9117-570",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9116-561",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9133-55A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9113-550",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9131-52A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9111-520",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9110-51A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9110-510",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9115-505",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7037-A50",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7778-23X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7998-61X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7998-60X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9119-FHA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9125-F2A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9117-MMA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8234-EMA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9409-M50",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8204-E8A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9408-M25",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9407-M15",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8261-E4S",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8203-E4A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9179-MHB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9179-MHC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9117-MMB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9117-MMC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8412-EAD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8236-E8C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8233-E8B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246-L2S",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246-L2C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246-L1S",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246-L1C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8205-E6B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8205-E6C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8202-E4B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8202-E4C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8231-E2C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8231-E2B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8231-E1C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7895-43X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7954-24X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7895-23X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7895-42X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7895-22X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1457-7FL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7891-74X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7891-73X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8406-71Y",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8406-70Y",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9119-FHB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9179-MHD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9117-MMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9109-RMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8408-E8D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8248-L4T",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246-L2T",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246-L2D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246-L1T",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8205-E6D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8202-E4D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8231-E2D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8268-E1D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8231-E1D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9119-MHE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9119-MME",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8408-E8E",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8286-42A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8284-22A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8286-41A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8247-42L",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8247-22L",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8247-21L",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9080-MHE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9080-MME",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8408-44E",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8335-GTB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8001-22C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8001-12C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8335-GTA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8335-GCA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8348-21C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9223-42H",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9223-22H",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9009-42A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9009-41A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9009-22A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9008-22L",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8335-GTX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8335-GTH",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8335-GTG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9040-MR9",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9080-M9S",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "Operating_System",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "AIX",
+          "synonyms": [
+            "p5"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IBM i",
+          "synonyms": [
+            "i5/OS",
+            "OS/400",
+            "i5"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linux",
+          "synonyms": [
+            "RHEL",
+            "Red Hat",
+            "Ubuntu",
+            "SLES"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Machine_Model",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "RMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "22C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "22A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "21L",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "21C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "12C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "595",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "590",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "575",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "570",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "561",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "550",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "525",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "520",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "515",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "510",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "505",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "M9S",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E8A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E8B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E8C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E8D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E8E",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "EAD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "EMA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "F2A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FHA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "FHB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GCA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GTA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GTB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GTG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GTH",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "GTX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L1C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L1D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L1S",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L1T",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L2C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L2D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L2S",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L2T",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L4T",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "M15",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "M25",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "M50",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MHB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MHC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MHD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MHE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MMA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MMB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MMC",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MMD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MME",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MR9",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E6D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E6C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E6B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E4S",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E4D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E4C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E4B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E4A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E2D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E2C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E2B",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E1D",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E1C",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "A50",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7FL",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "74X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "73X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "71Y",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "70Y",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "61X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "60X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "55A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "52A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "51A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "44E",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "43X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "42X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "42L",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "42H",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "42A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "41A",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "24X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "23X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "22X",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "22L",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "22H",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "Lifecycle_date",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Announcement",
+          "synonyms": [
+            "Announced",
+            "Introduced"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "EoS",
+          "synonyms": [
+            "End of Support",
+            "End of Service",
+            "Service Discontinued",
+            "Unsupported",
+            "Not supported",
+            "No longer supported",
+            "End of life",
+            "stop supporting",
+            "stop being supported"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Withdrawn from Marketing",
+          "synonyms": [
+            "Sold",
+            "WDFM",
+            "Withdrawn",
+            "still buy",
+            "purchase",
+            "stop selling"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Generally Available",
+          "synonyms": [
+            "Available",
+            "GA"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Machine_Type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "9110",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9115",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7037",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7778",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7998",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9125",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8234",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9409",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8204",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9408",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9407",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9116",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8261",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8203",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8412",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8236",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8233",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7954",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7895",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1457",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7891",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8406",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9179",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9117",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9109",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8248",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8246",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8205",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8202",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8268",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8231",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9119",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8284",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8286",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8247",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8408",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8001",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9008",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8335",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9040",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9080",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9118",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9405",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9406",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8348",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9223",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9133",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9009",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9113",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9131",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9111",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-07-10"
+    }
+  },
+  "skill_id": "22ef6208-b984-4d5f-b1e4-c1a40d5af8be",
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Which kind of Lifecycle date are you interested in?"
+      },
+      "parent": "slot_17_1558526554093",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_19_1558526554093",
+      "previous_sibling": "handler_18_1558526554093"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_17_1558526554093",
+      "context": {
+        "Lifecycle_date": "@Lifecycle_date"
+      },
+      "conditions": "@Lifecycle_date",
+      "event_name": "input",
+      "dialog_node": "handler_18_1558526554093"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1558526473782",
+      "context": {
+        "POWER_Gen": "@POWER_Gen"
+      },
+      "metadata": {},
+      "conditions": "@POWER_Gen",
+      "event_name": "input",
+      "dialog_node": "handler_11_1558526473782",
+      "previous_sibling": "handler_12_1558526473782"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1558526473782",
+      "event_name": "focus",
+      "dialog_node": "handler_12_1558526473782"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1558526388796",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_7_1558526388796",
+      "previous_sibling": "handler_6_1558526388796"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1558526388796",
+      "context": {
+        "Server_Name": "@Server_Name"
+      },
+      "conditions": "@Server_Name",
+      "event_name": "input",
+      "dialog_node": "handler_6_1558526388796"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1565269534770",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1565269534773",
+      "previous_sibling": "handler_8_1565269534773"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1565269534770",
+      "context": {
+        "Operating_System": "@Operating_System"
+      },
+      "conditions": "@Operating_System",
+      "event_name": "input",
+      "dialog_node": "handler_8_1565269534773"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1559724906702",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1559724906702",
+      "previous_sibling": "handler_2_1559724906702"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1559724906702",
+      "context": {
+        "Machine_Type": "@Machine_Type"
+      },
+      "conditions": "@Machine_Type",
+      "event_name": "input",
+      "dialog_node": "handler_2_1559724906702"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1559724964634",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_9_1559724964634",
+      "previous_sibling": "handler_8_1559724964634"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1559724964634",
+      "context": {
+        "Server_MTM": "@Server_MTM"
+      },
+      "conditions": "@Server_MTM",
+      "event_name": "input",
+      "dialog_node": "handler_8_1559724964634"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for PS700",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8406-70Y"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter PS700 Express)",
+      "dialog_node": "node_45_1565269791503",
+      "previous_sibling": "node_44_1565269755624"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S822",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8284-22A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S822)",
+      "dialog_node": "node_8_1564130271340",
+      "previous_sibling": "node_7_1564130073648"
+    },
+    {
+      "type": "standard",
+      "title": "Unknown Server Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " but I am afraid I don't recognise the name of an IBM Power System from what you sent to me. Is the server an IBM Power System, based in a generation of POWER from POWER9 to POWER5? Maybe contact David Spurway (david.spurway@uk.ibm.com) and maybe he can help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1565342838813",
+      "previous_sibling": "node_10_1565276119528"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 740",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 8205-E6D)",
+                "value": {
+                  "input": {
+                    "text": "8205-E6D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 8205-E6C)",
+                "value": {
+                  "input": {
+                    "text": "8205-E6C"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 8205-E6B)",
+                "value": {
+                  "input": {
+                    "text": "8205-E6B"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 740 Express)",
+      "dialog_node": "node_52_1565270788149",
+      "previous_sibling": "node_50_1565270419411"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for L922",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9008-22L"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System L922)",
+      "dialog_node": "node_7_1564074250337",
+      "previous_sibling": "node_6_1564074169515"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S814",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8286-41A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S814)",
+      "dialog_node": "node_6_1564130027293",
+      "previous_sibling": "node_5_1564129958506"
+    },
+    {
+      "type": "standard",
+      "title": "Check which p460",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 7895-43X)",
+                "value": {
+                  "input": {
+                    "text": "7895-43X"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 (respond with 7895-42X)",
+                "value": {
+                  "input": {
+                    "text": "7895-42X"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Flex System p460)",
+      "dialog_node": "node_2_1565271957983",
+      "previous_sibling": "node_1_1565271559533"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 710",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+,  one year warranty (respond with 8268-E1D)",
+                "value": {
+                  "input": {
+                    "text": "8268-E1D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7+, three year warranty (respond with 8231-E1D)",
+                "value": {
+                  "input": {
+                    "text": "8231-E1D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 8231-E1C)",
+                "value": {
+                  "input": {
+                    "text": "8231-E1C"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 8231-E2B)",
+                "value": {
+                  "input": {
+                    "text": "8231-E2B"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 710 Express)",
+      "dialog_node": "node_1_1565271559533",
+      "previous_sibling": "node_54_1565271286549"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for PS704",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7891-74X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter PS704 Express)",
+      "dialog_node": "node_41_1565269653559",
+      "previous_sibling": "node_33_1565264896238"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S821LC",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8001-12C"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S821LC)",
+      "dialog_node": "node_14_1564075050447",
+      "previous_sibling": "node_13_1564074962753"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S824L",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8247-42L"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S824L)",
+      "dialog_node": "node_11_1564074617610",
+      "previous_sibling": "node_10_1564074542852"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1558521244693",
+      "variable": "$Server_Name",
+      "dialog_node": "slot_5_1558526388796",
+      "previous_sibling": "slot_17_1558526554093"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S812L",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8247-21L"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S824L)",
+      "dialog_node": "node_13_1564074962753",
+      "previous_sibling": "node_12_1564074907846"
+    },
+    {
+      "type": "standard",
+      "title": "Check for full MTM",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " you know the full Machine Type and Model (@Server_MTM) and you want to know the @Lifecycle_date date. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "<? @Server_MTM ?>"
+      },
+      "metadata": {},
+      "conditions": "@Server_MTM && @Lifecycle_date",
+      "dialog_node": "node_10_1559725548557",
+      "previous_sibling": "slot_10_1558526473782"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 7R2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+, tower model (respond with 8246-L2T)",
+                "value": {
+                  "input": {
+                    "text": "8246-L2T"
+                  }
+                }
+              },
+              {
+                "label": "POWER7, rack mount model (respond with 8246-L2D)",
+                "value": {
+                  "input": {
+                    "text": "8246-L2D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 8246-L2C)",
+                "value": {
+                  "input": {
+                    "text": "8246-L2C"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 8246-L2S)",
+                "value": {
+                  "input": {
+                    "text": "8246-L2S"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM PowerLinux 7R2)",
+      "dialog_node": "node_13_1565262426942",
+      "previous_sibling": "node_3_1565272140150"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "variable": "$POWER_Gen",
+      "dialog_node": "slot_10_1558526473782",
+      "previous_sibling": "slot_5_1558526388796"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for JS23",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7778-23X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter JS23 Express)",
+      "dialog_node": "node_31_1565264820609",
+      "previous_sibling": "node_20_1565263589525"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E850",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name (which is different from the E850C). The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8408-E8E"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E850)",
+      "dialog_node": "node_4_1564129890535",
+      "previous_sibling": "node_3_1564129762871"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for PS702",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8406-71Y"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter PS702 Express)",
+      "dialog_node": "node_43_1565269719349",
+      "previous_sibling": "node_42_1565269689031"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for JS22",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7998-61X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter JS22 Express)",
+      "dialog_node": "node_32_1565264860128",
+      "previous_sibling": "node_31_1565264820609"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S812",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8284-21A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S812)",
+      "dialog_node": "node_7_1564130073648",
+      "previous_sibling": "node_6_1564130027293"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 575",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER6-based 575 (respond with 9125-F2A)",
+                "value": {
+                  "input": {
+                    "text": "9125-F2A"
+                  }
+                }
+              },
+              {
+                "label": "POWER5, p5 575 (respond with 9118-575)",
+                "value": {
+                  "input": {
+                    "text": "9118-575"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 575) ||  @Server_Name:(p5 575) || @Machine_Model:575",
+      "dialog_node": "node_8_1565273957280",
+      "previous_sibling": "node_6_1565273110153"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for ESE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8412-EAD"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System ESE)",
+      "dialog_node": "node_11_1565261606662",
+      "previous_sibling": "node_19_1565263589525"
+    },
+    {
+      "type": "standard",
+      "title": "Check which S822LC",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the S822LCs, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the S822LC you are interested in",
+            "options": [
+              {
+                "label": "The S822LC with the optional K40 GPUs (respond with 8335-GCA)",
+                "value": {
+                  "input": {
+                    "text": "IBM Power System S822LC GCA"
+                  }
+                }
+              },
+              {
+                "label": "The S822LC with the pair of K80 GPUs (respond with 8335-GTA)",
+                "value": {
+                  "input": {
+                    "text": "IBM Power System S822LC GTA"
+                  }
+                }
+              },
+              {
+                "label": "The S822LC for HPC with NVLink (respond with 8335-GTB)",
+                "value": {
+                  "input": {
+                    "text": "IBM Power System S822LC for HPC"
+                  }
+                }
+              },
+              {
+                "label": "The S822LC for Big Data (respond with 8001-22C)",
+                "value": {
+                  "input": {
+                    "text": "IBM Power System S822LC for Big Data"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S822LC GCA) || @Server_Name:(IBM Power System S822LC for HPC) || @Server_Name:(IBM Power System S822LC for Big Data) || @Server_Name:(IBM Power System S822LC GTA)",
+      "dialog_node": "node_2_1559292745063",
+      "previous_sibling": "node_1_1559643989690"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 7R1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+, tower model (respond with 8246-L1T)",
+                "value": {
+                  "input": {
+                    "text": "8246-L1T"
+                  }
+                }
+              },
+              {
+                "label": "POWER7, rack mount model (respond with 8246-L1D)",
+                "value": {
+                  "input": {
+                    "text": "8246-L1D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 8246-L1C)",
+                "value": {
+                  "input": {
+                    "text": "8246-L1C"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 8246-L1S)",
+                "value": {
+                  "input": {
+                    "text": "8246-L1S"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM PowerLinux 7R1)",
+      "dialog_node": "node_4_1565272451123",
+      "previous_sibling": "node_13_1565262426942"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E870",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name (which is different from the E870C). The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9119-MME"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E870)",
+      "dialog_node": "node_3_1564129762871",
+      "previous_sibling": "node_2_1564129693419"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for p270",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7954-24X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Flex System p270)",
+      "dialog_node": "node_8_1565261404514",
+      "previous_sibling": "node_46_1565269843237"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 570",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER6-based, mostly AIX, 570 (respond with 9117-MMA)",
+                "value": {
+                  "input": {
+                    "text": "9117-MMA"
+                  }
+                }
+              },
+              {
+                "label": "POWER6-based, mostly IBM i, 570 (respond with 9406-MMA)",
+                "value": {
+                  "input": {
+                    "text": "9406-MMA"
+                  }
+                }
+              },
+              {
+                "label": "POWER5, p5 570 (respond with 9117-570)",
+                "value": {
+                  "input": {
+                    "text": "9117-570"
+                  }
+                }
+              },
+              {
+                "label": "POWER5, i5 570 (respond with 9406-570)",
+                "value": {
+                  "input": {
+                    "text": "9406-570"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 570) ||     @Server_Name:(p5 570) ||    @Server_Name:(i5 570) ||   @Machine_Model:570 || @Server_Name:(IBM System i 570)",
+      "dialog_node": "node_7_1565273572130",
+      "previous_sibling": "node_8_1565273957280"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E880C",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9080-MHE"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E880C)",
+      "dialog_node": "node_8_1564074373345",
+      "previous_sibling": "node_7_1564074250337"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E950",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9040-MR9"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E950)",
+      "dialog_node": "node_1_1564071683731",
+      "previous_sibling": "node_1_1559135458123"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for H924",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9223-22H"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System H924)",
+      "dialog_node": "node_3_1564073786959",
+      "previous_sibling": "node_2_1564072174377"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for JS43",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7778-23X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter JS43 Express)",
+      "dialog_node": "node_20_1565263589525",
+      "previous_sibling": "node_11_1565261606662"
+    },
+    {
+      "type": "standard",
+      "title": "Check which AC922",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the AC922s, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the S822LC you are interested in",
+            "options": [
+              {
+                "label": "The original AC922, for Coral (respond with 8335-GTG)",
+                "value": {
+                  "input": {
+                    "text": "IBM Power System AC922 GTG"
+                  }
+                }
+              },
+              {
+                "label": "The refresh of the AC922 (respond with 8335-GTH)",
+                "value": {
+                  "input": {
+                    "text": "IBM Power System AC922 GTH"
+                  }
+                }
+              },
+              {
+                "label": "The water cooled AC922 (respond with 8335-GTX)",
+                "value": {
+                  "input": {
+                    "text": "IBM Power System AC922 GTX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System AC922 GTG) || @Server_Name:(IBM Power System AC922 GTH) || @Server_Name:(IBM Power System AC922 GTX)",
+      "dialog_node": "node_1_1559643989690",
+      "previous_sibling": "slot_5_1565269534770"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1558521244693",
+      "variable": "$Machine_Model",
+      "dialog_node": "slot_4_1559724947841",
+      "previous_sibling": "slot_1_1559724906702"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E980",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9080-M9S"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E980)",
+      "dialog_node": "node_1_1559135458123",
+      "previous_sibling": "node_10_1559725548557"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for H922",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9223-22H"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System H922)",
+      "dialog_node": "node_6_1564074169515",
+      "previous_sibling": "node_5_1564074119014"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1558521244693",
+      "variable": "$Operating_System",
+      "dialog_node": "slot_5_1565269534770",
+      "previous_sibling": "slot_7_1559724964634"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S914",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9009-41A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S914)",
+      "dialog_node": "node_4_1564073830629",
+      "previous_sibling": "node_3_1564073786959"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for 795",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9119-FHB"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 795)",
+      "dialog_node": "node_51_1565270535458",
+      "previous_sibling": "node_8_1564130271340"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S812LC",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8348-21C"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S812LC)",
+      "dialog_node": "node_15_1564075153848",
+      "previous_sibling": "node_14_1564075050447"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for JS12",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7998-60X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter JS12 Express)",
+      "dialog_node": "node_33_1565264896238",
+      "previous_sibling": "node_32_1565264860128"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S824",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8286-42A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S824)",
+      "dialog_node": "node_5_1564129958506",
+      "previous_sibling": "node_4_1564129890535"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E880",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name (which is different from the E880C). The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9119-MHE"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E880)",
+      "dialog_node": "node_2_1564129693419",
+      "previous_sibling": "node_15_1564075153848"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for Smart Cube",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8261-E4S"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Smart Cube)",
+      "dialog_node": "node_19_1565263589525",
+      "previous_sibling": "node_1_1564129628336"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 550",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER6, M50, mostly IBM i, 4 cores only (respond with 9409-M50)",
+                "value": {
+                  "input": {
+                    "text": "9409-M50"
+                  }
+                }
+              },
+              {
+                "label": "POWER6, 2, 4, 6 or 8 core version (respond with 8204-E8A)",
+                "value": {
+                  "input": {
+                    "text": "8204-E8A"
+                  }
+                }
+              },
+              {
+                "label": "POWER5+ p5 55A",
+                "value": {
+                  "input": {
+                    "text": "9133-55A"
+                  }
+                }
+              },
+              {
+                "label": "POWER5 p5 550 (respond with 9113-550)",
+                "value": {
+                  "input": {
+                    "text": "9113-550"
+                  }
+                }
+              },
+              {
+                "label": "POWER5 i5 550 (respond with 9406-550)",
+                "value": {
+                  "input": {
+                    "text": "9406-550"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 550 Express) ||    @Server_Name:(p5 550) ||   @Server_Name:(i5 570) ||  @Machine_Model:570 || @Server_Name:(p5 55A)",
+      "dialog_node": "node_27_1565263589525",
+      "previous_sibling": "node_9_1565274122220"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 720",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 8202-E4D)",
+                "value": {
+                  "input": {
+                    "text": "8202-E4D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 8202-E4C)",
+                "value": {
+                  "input": {
+                    "text": "8202-E4C"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 8202-E4B)",
+                "value": {
+                  "input": {
+                    "text": "8202-E4B"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 720 Express)",
+      "dialog_node": "node_54_1565271286549",
+      "previous_sibling": "node_53_1565270894379"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S822L",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8247-22L"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S824L)",
+      "dialog_node": "node_12_1564074907846",
+      "previous_sibling": "node_11_1564074617610"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 560",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER6-based 560 (respond with 8234-EMA)",
+                "value": {
+                  "input": {
+                    "text": "8234-EMA"
+                  }
+                }
+              },
+              {
+                "label": "POWER5, p5 560Q (respond with 9116-561)",
+                "value": {
+                  "input": {
+                    "text": "9116-561"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 560 Express) ||   @Server_Name:(p5 560Q) || @Machine_Model:561",
+      "dialog_node": "node_9_1565274122220",
+      "previous_sibling": "node_7_1565273572130"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for p5 185",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7037-A50"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(p5 185)",
+      "dialog_node": "node_12_1565276771671",
+      "previous_sibling": "node_11_1565276719398"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 590",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER6-based 590 (respond with 9119-FHA)",
+                "value": {
+                  "input": {
+                    "text": "9119-FHA"
+                  }
+                }
+              },
+              {
+                "label": "POWER5, p5 590 (respond with 9119-590)",
+                "value": {
+                  "input": {
+                    "text": "9119-590"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 590) ||   @Server_Name:(p5 590) || @Machine_Model:590",
+      "dialog_node": "node_6_1565273110153",
+      "previous_sibling": "node_5_1565272731825"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S924",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9009-42A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S924)",
+      "dialog_node": "node_2_1564072174377",
+      "previous_sibling": "node_1_1564071683731"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 520",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER6 M25, mostly IBM i with 2 cores (respond with 9408-M25)",
+                "value": {
+                  "input": {
+                    "text": "9408-M25"
+                  }
+                }
+              },
+              {
+                "label": "POWER 6 M15, mostly IBM i with 1 cores (respond with 9407-M15)",
+                "value": {
+                  "input": {
+                    "text": "9407-M15"
+                  }
+                }
+              },
+              {
+                "label": "POWER6 1, 2 or 4 core version (respond with 8203-E4A)",
+                "value": {
+                  "input": {
+                    "text": "8203-E4A"
+                  }
+                }
+              },
+              {
+                "label": "POWER5+ p5 52A (respond with 9131-52A)",
+                "value": {
+                  "input": {
+                    "text": "9131-52A"
+                  }
+                }
+              },
+              {
+                "label": "POWER5+ i5 525 (respond with 9406-525)",
+                "value": {
+                  "input": {
+                    "text": "9406-525"
+                  }
+                }
+              },
+              {
+                "label": "POWER5/POWER5+ i5 520 (respond with 9406-520)",
+                "value": {
+                  "input": {
+                    "text": "9406-520"
+                  }
+                }
+              },
+              {
+                "label": "POWER5 p5 520 (respond with 9111-520)",
+                "value": {
+                  "input": {
+                    "text": "9111-520"
+                  }
+                }
+              },
+              {
+                "label": "POWER5 1 core i5 520 (respond with 9405-520)",
+                "value": {
+                  "input": {
+                    "text": "9405-520"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 520 Express) ||       @Server_Name:(p5 520) ||      @Server_Name:(p5 52A) ||     @Server_Name:(i5 520) ||    @Server_Name:(i5 525) ||   @Machine_Model:520 ||  @Machine_Model:52A || @Machine_Model:525",
+      "dialog_node": "node_28_1565263589525",
+      "previous_sibling": "node_27_1565263589525"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1558521244693",
+      "variable": "$Server_MTM",
+      "dialog_node": "slot_7_1559724964634",
+      "previous_sibling": "slot_4_1559724947841"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E850C",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8408-44E"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E850C)",
+      "dialog_node": "node_10_1564074542852",
+      "previous_sibling": "node_9_1564074486496"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for 760",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9109-RMD"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 760)",
+      "dialog_node": "node_2_1565260524546",
+      "previous_sibling": "node_51_1565270535458"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 510",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER5+ p5 510 or 510Q (respond with 9110-51A)",
+                "value": {
+                  "input": {
+                    "text": "9131-52A"
+                  }
+                }
+              },
+              {
+                "label": "POWER5+ i5 515 (respond with 9407-515)",
+                "value": {
+                  "input": {
+                    "text": "9407-515"
+                  }
+                }
+              },
+              {
+                "label": "POWER5 p5 510 (respond with 9110-510)",
+                "value": {
+                  "input": {
+                    "text": "9110-510"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(p5 510) ||      @Server_Name:(i5 515) ||   @Machine_Model:510 ||  @Machine_Model:51A || @Machine_Model:515",
+      "dialog_node": "node_10_1565276119528",
+      "previous_sibling": "node_28_1565263589525"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for PS703",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "7891-73X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter PS703 Express)",
+      "dialog_node": "node_42_1565269689031",
+      "previous_sibling": "node_41_1565269653559"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 750",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 8408-E8D)",
+                "value": {
+                  "input": {
+                    "text": "8408-E8D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 (respond with 8233-E8B)",
+                "value": {
+                  "input": {
+                    "text": "8233-E8B"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 750 Express)",
+      "dialog_node": "node_50_1565270419411",
+      "previous_sibling": "node_49_1565270239993"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 595",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER6-based 595 (respond with 9119-FHA)",
+                "value": {
+                  "input": {
+                    "text": "9119-FHA"
+                  }
+                }
+              },
+              {
+                "label": "POWER5, p5 595 (respond with 9119-595)",
+                "value": {
+                  "input": {
+                    "text": "9119-595"
+                  }
+                }
+              },
+              {
+                "label": "POWER5, i5 595 (respond with 9406-595)",
+                "value": {
+                  "input": {
+                    "text": "9406-595"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 595) ||    @Server_Name:(p5 595) ||  @Server_Name:(i5 595) || @Machine_Model:595",
+      "dialog_node": "node_5_1565272731825",
+      "previous_sibling": "node_14_1565263589521"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for p24L",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "1457-7FL"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Flex System PowerLinux p24L)",
+      "dialog_node": "node_46_1565269843237",
+      "previous_sibling": "node_45_1565269791503"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 780",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 9179-MHD)",
+                "value": {
+                  "input": {
+                    "text": "9179-MHD"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 9179-MHC)",
+                "value": {
+                  "input": {
+                    "text": "9179-MHC"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 9179-MHB)",
+                "value": {
+                  "input": {
+                    "text": "9179-MHB"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 780)",
+      "dialog_node": "node_48_1565270038871",
+      "previous_sibling": "node_2_1558716042182"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 770",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 9117-MMD)",
+                "value": {
+                  "input": {
+                    "text": "9117-MMD"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 9117-MMC)",
+                "value": {
+                  "input": {
+                    "text": "9117-MMC"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 9117-MMB)",
+                "value": {
+                  "input": {
+                    "text": "9117-MMB"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 770)",
+      "dialog_node": "node_49_1565270239993",
+      "previous_sibling": "node_48_1565270038871"
+    },
+    {
+      "type": "standard",
+      "title": "Check for POWER6",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " (@POWER_Gen version)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@POWER_Gen:POWER6 || @POWER_Gen:(POWER6+)",
+      "dialog_node": "node_14_1565263589521",
+      "previous_sibling": "node_4_1565272451123"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for p5 505",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9115-505"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(p5 505)",
+      "dialog_node": "node_11_1565276719398",
+      "previous_sibling": "node_8_1565261404514"
+    },
+    {
+      "type": "standard",
+      "title": "Check for POWER7+",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " (@POWER_Gen version)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@POWER_Gen:(POWER7+)",
+      "dialog_node": "node_2_1558716042182",
+      "previous_sibling": "node_2_1559292745063"
+    },
+    {
+      "type": "standard",
+      "title": "Check which p260",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 7895-23X)",
+                "value": {
+                  "input": {
+                    "text": "7895-23X"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 (respond with 7895-22X)",
+                "value": {
+                  "input": {
+                    "text": "7895-22X"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Flex System p260)",
+      "dialog_node": "node_3_1565272140150",
+      "previous_sibling": "node_2_1565271957983"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for 755",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8236-E8C"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 755)",
+      "dialog_node": "node_1_1564129628336",
+      "previous_sibling": "node_2_1565260524546"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for S922",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9009-22A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System S922)",
+      "dialog_node": "node_5_1564074119014",
+      "previous_sibling": "node_4_1564073830629"
+    },
+    {
+      "type": "standard",
+      "title": "Check which 730",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are interested in one of the @Server_Name servers, but there were a few of them. Which one are you interested in?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Please select the variation of the @Server_Name you are interested in",
+            "options": [
+              {
+                "label": "POWER7+ (respond with 8231-E2D)",
+                "value": {
+                  "input": {
+                    "text": "8231-E2D"
+                  }
+                }
+              },
+              {
+                "label": "POWER7 with refreshed I/O (respond with 8231-E2C)",
+                "value": {
+                  "input": {
+                    "text": "8231-E2C"
+                  }
+                }
+              },
+              {
+                "label": "Original POWER7 (respond with 8231-E2B)",
+                "value": {
+                  "input": {
+                    "text": "8231-E2B"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 730 Express)",
+      "dialog_node": "node_53_1565270894379",
+      "previous_sibling": "node_52_1565270788149"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for PS701",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "8406-71Y"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM BladeCenter PS701 Express)",
+      "dialog_node": "node_44_1565269755624",
+      "previous_sibling": "node_43_1565269719349"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for E870C",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1558521244693",
+      "context": {
+        "Server_MTM": "9080-MME"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System E870C)",
+      "dialog_node": "node_9_1564074486496",
+      "previous_sibling": "node_8_1564074373345"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1558521244693",
+      "variable": "$Machine_Type",
+      "dialog_node": "slot_1_1559724906702",
+      "previous_sibling": "node_12_1565276771671"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1558521244693",
+      "metadata": {},
+      "variable": "$Lifecycle_date",
+      "dialog_node": "slot_17_1558526554093"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1559724947841",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1559724947841",
+      "previous_sibling": "handler_5_1559724947841"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_4_1559724947841",
+      "context": {
+        "Machine_Model": "@Machine_Model"
+      },
+      "conditions": "@Machine_Model",
+      "event_name": "input",
+      "dialog_node": "handler_5_1559724947841"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER6 575",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_14_1565263589521",
+      "context": {
+        "Server_MTM": "9125-F2A"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 575)",
+      "dialog_node": "node_16_1565263589525",
+      "previous_sibling": "node_15_1565263589525"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER6 560",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_14_1565263589521",
+      "context": {
+        "Server_MTM": "8234-EMA"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 560 Express)",
+      "dialog_node": "node_18_1565263589525",
+      "previous_sibling": "node_17_1565263589525"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER6 570",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_14_1565263589521",
+      "context": {
+        "Server_MTM": "9117-MMA"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 570)",
+      "dialog_node": "node_17_1565263589525",
+      "previous_sibling": "node_16_1565263589525"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER6 595 or 590",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_14_1565263589521",
+      "context": {
+        "Server_MTM": "9119-FHA"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 595) || @Server_Name:(IBM Power System 590)",
+      "dialog_node": "node_15_1565263589525"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ p260",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "7895-23X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Flex System p260)",
+      "dialog_node": "node_10_1565261548232",
+      "previous_sibling": "node_9_1565261456820"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ 7R4",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "8248-L4T"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM PowerLinux 7R4)",
+      "dialog_node": "node_4_1565260638880",
+      "previous_sibling": "node_3_1565260565243"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ 740",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "8205-E6D"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 740 Express)",
+      "dialog_node": "node_5_1565261148317",
+      "previous_sibling": "node_4_1565260638880"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ 730",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "8231-E2D"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 730 Express)",
+      "dialog_node": "node_6_1565261251977",
+      "previous_sibling": "node_5_1565261148317"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ 770",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "9117-MMD"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 770)",
+      "dialog_node": "node_1_1565093220569",
+      "previous_sibling": "node_1_1565260451040"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ 720",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "8202-E4D"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 720 Express)",
+      "dialog_node": "node_7_1565261303003",
+      "previous_sibling": "node_6_1565261251977"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ p460",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "7895-43X"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Flex System p460)",
+      "dialog_node": "node_9_1565261456820",
+      "previous_sibling": "node_7_1565261303003"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ 750",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "8408-E8D"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 750 Express)",
+      "dialog_node": "node_3_1565260565243",
+      "previous_sibling": "node_1_1565093220569"
+    },
+    {
+      "type": "standard",
+      "title": "MTM for POWER7+ 780",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " called the @Server_Name. The Machine Type and Model for the @Server_Name is  $Server_MTM. The result, from my search"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1558716042182",
+      "context": {
+        "Server_MTM": "9179-MHD"
+      },
+      "metadata": {},
+      "conditions": "@Server_Name:(IBM Power System 780)",
+      "dialog_node": "node_1_1565260451040"
+    },
+    {
+      "type": "frame",
+      "title": "Check a date for an IBM Power System by MTM",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I think you are wanting to check the @Lifecycle_date date for an IBM Power System server"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Check_Date",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1558521244693",
+      "digress_out": "allow_all",
+      "previous_sibling": "Welcome",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1558521244693"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, I'm Robert, David Spurway's wee Virtual Assistant. How can I help you?"
+              },
+              {
+                "text": "So far, I am quite good at finding life cycle dates for IBM Power Systems, based on the POWER processor generations between POWER5 and POWER9. "
+              },
+              {
+                "text": "If that sound helpful, ask away!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome || #Greeting",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "fce352fd-061e-452e-b3c7-3a18700a78dc",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
